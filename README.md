@@ -30,7 +30,8 @@ grunt.loadNpmTasks('css-stats');
 
 ```shell
 $ brew install ack
-$ sudo brew link ack```
+$ sudo brew link ack
+```
 
 
 
