@@ -1,0 +1,10 @@
+body {
+	color: #f0f;
+	background: aliceblue;
+	padding: 20px;
+}
+
+div {
+	padding: 20px;
+	background-color: rgb(255,0,0);
+}

@@ -1,0 +1,69 @@
+
+======================================================
+ CSS STATISTICS
+======================================================
+
+------------------------------------------------------
+CSS Files Analyzed
+------------------------------------------------------
+./node_modules/grunt-contrib-nodeunit/node_modules/nodeunit/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/docstyle.css
+./node_modules/grunt-contrib-nodeunit/node_modules/nodeunit/share/nodeunit.css
+./node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/test/test_underscore/vendor/qunit.css
+./node_modules/grunt/node_modules/underscore.string/test/test_underscore/vendor/qunit.css
+./normalize.css
+./test/fixtures/normalize.css
+
+------------------------------------------------------
+CSS Files Size
+------------------------------------------------------
+4.0K	./node_modules/grunt-contrib-nodeunit/node_modules/nodeunit/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/docstyle.css
+4.0K	./node_modules/grunt-contrib-nodeunit/node_modules/nodeunit/share/nodeunit.css
+4.0K	./node_modules/grunt/node_modules/underscore.string/test/test_underscore/vendor/qunit.css
+4.0K	./normalize.css
+4.0K	./test/fixtures/normalize.css
+8.0K	./node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/test/test_underscore/vendor/qunit.css
+ 28K	total
+
+------------------------------------------------------
+Lines of CSS by File
+------------------------------------------------------
+      29 ./test/fixtures/normalize.css
+      66 ./normalize.css
+      70 ./node_modules/grunt-contrib-nodeunit/node_modules/nodeunit/share/nodeunit.css
+      75 ./node_modules/grunt-contrib-nodeunit/node_modules/nodeunit/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/docstyle.css
+     195 ./node_modules/grunt/node_modules/underscore.string/test/test_underscore/vendor/qunit.css
+     235 ./node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/test/test_underscore/vendor/qunit.css
+     670 total
+
+------------------------------------------------------
+Selector Analysis
+------------------------------------------------------
+Rule Blocks: 0
+
+------------------------------------------------------
+Repetitive Property Analysis
+------------------------------------------------------
+Float: 0
+Height: 0
+Width: 0
+Margin: 0
+Padding: 0
+Font Size: 0
+Color: 0
+!important: 0
+
+------------------------------------------------------
+Color Analysis
+------------------------------------------------------
+Hex Value Declarations
+
+Color Name Declarations
+
+RGBA Value Declarations
+
+RGB Value Declarations
+
+HSLA Value Declarations
+
+HSL Value Declarations
+
