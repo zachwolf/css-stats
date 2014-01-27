@@ -16,35 +16,38 @@ module.exports = function(grunt) {
   grunt.registerMultiTask('css_stats', 'Analyze and refine your CSS!', function() {
     // Merge task-specific and/or target-specific options with these defaults.
     var options = this.options({
-      punctuation: '.',
-      separator: ', '
+      path: "test/fixtures"
     });
 
-    // Iterate over all specified file groups.
-    this.files.forEach(function(f) {
-      // Concat specified files.
-      var src = f.src.filter(function(filepath) {
-        // Warn on and remove invalid source files (if nonull was set).
-        if (!grunt.file.exists(filepath)) {
-          grunt.log.warn('Source file "' + filepath + '" not found.');
-          return false;
-        } else {
-          return true;
-        }
-      }).map(function(filepath) {
-        // Read file source.
-        return grunt.file.read(filepath);
-      }).join(grunt.util.normalizelf(options.separator));
 
-      // Handle options.
-      src += options.punctuation;
+    var done = this.async();
 
-      // Write the destination file.
-      grunt.file.write(f.dest, src);
+    grunt.util.spawn({
+      // The command to execute. It should be in the system path.
+      cmd: "bash",
+      // If specified, the same grunt bin that is currently running will be
+      // spawned as the child command, instead of the "cmd" option. Defaults
+      // to false.
+      // grunt: false,
+      // An array of arguments to pass to the command.
+      args: [ __dirname + "/css-stats-ack.sh"],
+      // Additional options for the Node.js child_process spawn method.
+      opts: {
+        cwd: options.path
+      }
+      // If this value is set and an error occurs, it will be used as the value
+      // and null will be passed as the error value.
+      // fallback: fallbackValue
+    }, function (err, result, code) {
+      if (err) {
+        throw err;
+      }
 
-      // Print a success message.
-      grunt.log.writeln('File "' + f.dest + '" created.');
+      grunt.log.writeln(result.stdout);
+      done();
+
     });
+
   });
 
 };
